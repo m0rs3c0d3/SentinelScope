@@ -1,6 +1,6 @@
 # SentinelScope 
 
-A modular cybersecurity toolkit with threat intelligence aggregation, network scanning, and log analysis.
+A modular cybersecurity toolkit with threat intelligence aggregation, network scanning, and log analysis. Focusing on backend, some things may break at the moment. You'll need your own API keys regardless.
 
 ## Architecture
 

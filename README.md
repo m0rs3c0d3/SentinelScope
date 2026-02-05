@@ -1,4 +1,4 @@
-# SentinelScope 🎯
+# SentinelScope 
 
 A modular cybersecurity toolkit with threat intelligence aggregation, network scanning, and log analysis.
 

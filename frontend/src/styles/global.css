@@ -1,0 +1,57 @@
+:root {
+  --bg-primary: #0a0e17;
+  --bg-secondary: rgba(255, 255, 255, 0.02);
+  --bg-hover: rgba(255, 255, 255, 0.04);
+  --border: rgba(255, 255, 255, 0.06);
+  --border-hover: rgba(5, 217, 232, 0.2);
+  --text-primary: #e8eaed;
+  --text-secondary: #8a8f98;
+  --text-muted: #6b7080;
+  --text-dim: #4a4f5c;
+  --cyan: #05d9e8;
+  --cyan-dim: rgba(5, 217, 232, 0.08);
+  --cyan-border: rgba(5, 217, 232, 0.15);
+  --red: #ff2a6d;
+  --orange: #ff9e2c;
+  --yellow: #ffd700;
+  --font-mono: "JetBrains Mono", "Fira Code", "Cascadia Code", monospace;
+  --font-body: "JetBrains Mono", -apple-system, system-ui, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(5, 217, 232, 0.2); border-radius: 3px; }
+* { scrollbar-width: thin; scrollbar-color: rgba(5, 217, 232, 0.2) transparent; }
+
+/* Animations */
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.animate-in {
+  animation: fadeSlideUp 0.5s ease;
+}
+
+input::placeholder {
+  color: var(--text-dim);
+}
